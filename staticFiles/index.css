@@ -1,0 +1,43 @@
+@font-face 
+{
+    font-family: titleFont;
+    src: url(assets/QTAtchen.otf);
+}
+
+.headerDivider 
+{
+    border-top: 8px solid #bbb;
+    margin: 0;
+}
+.headerTitle
+{
+    text-align: center;
+}
+.headerLinkDiv
+{
+    /* margin:auto;
+    width: 50%; */
+}
+.headerLinkTable
+{
+    width:100%;
+    margin-bottom: 0;
+    /* table-layout: fixed ;
+    width: 100% ;
+    border-spacing: 2vw 0;
+    border-collapse: separate; */
+}
+.headerTableColumn
+{
+    margin: 0;
+    text-align: center;
+    /* width: 100%;
+    background-color: green;
+    text-align: center;
+    border-radius: 15px; */
+}
+
+.headerTableColumn:hover
+{
+    background-color: yellow;
+}
