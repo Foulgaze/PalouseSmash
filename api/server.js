@@ -7,9 +7,14 @@ const app = express()
 const port = process.env.PORT || 3000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const pathToStatic = `${__dirname}/../staticFiles`;
 
 
-app.use(express.static(`${__dirname}/../staticFiles`));
+app.use(express.static(pathToStatic));
+
+app.use(express.static(pathToStatic, {
+  extensions: ['html', 'htm']
+}));
 
 app.get('/', (req, res) =>{
     res.send("{}");
