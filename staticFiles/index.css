@@ -5,3 +5,10 @@
     margin-bottom:5%;
     width: 100%;
 }
+
+.bodyDiv
+{
+    height:100%;
+    padding:10;
+    margin:0;
+}
