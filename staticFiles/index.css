@@ -1,6 +1,5 @@
 .bodyDiv
 {
-    display: flex;
     margin-top:5%;
     margin-bottom:5%;
     width: 100%;
@@ -11,4 +10,9 @@
     height:100%;
     padding:10;
     margin:0;
+}
+.bodyHeader
+{
+    font-weight: 900;
+    font-size:1200%;
 }

@@ -1,0 +1,111 @@
+.fade-in
+{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear
+{
+    opacity: 1;
+}
+.from-left {
+    grid-column: 2 / 3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: right;
+    font-size:400%;
+
+
+  }
+  
+  .from-right {
+    grid-column: 3 / 4;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    text-align: left;
+    font-size:400%;
+    
+  }
+  
+  .from-left,
+  .from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .from-left.appear,
+  .from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+.columns {
+    display: flex;
+  }
+  
+  .col + .col {
+    margin-left: 1.5em;
+  }
+
+  .more-stuff-grid {
+    background: #f4f4f4;
+    padding: 4em 0;
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+    grid-template-columns: minmax(3em, 4fr) repeat(2, minmax(600px, 800px)) minmax(
+        3em,
+        4fr
+      );
+  }
+
+  img {
+    width:100%;
+    height:100%;
+    object-fit: fill;
+}
+body
+{
+    overflow-x: hidden;
+}
+
+#rankingsHeader
+{
+    text-align: center;
+    font-size:400%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+@media(max-width: 1000px)
+{
+    .from-right {
+        grid-column: 2 / 3;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        text-align: right;
+        font-size:400%;
+      }
+      .rankingTimestamp
+      {
+        display:none;
+      }
+      .more-stuff-grid {
+        background: #f4f4f4;
+        padding: 4em 0;
+        display: grid;
+        grid-gap: 2em;
+        align-items: center;
+        grid-template-columns: minmax(3em, 3fr) repeat(2, minmax(400px, 600px)) minmax(
+            3em,
+            3fr
+          );
+      }
+    
+}
+
+

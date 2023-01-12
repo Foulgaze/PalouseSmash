@@ -1,5 +1,7 @@
 <html>
-    <link rel="stylesheet" href="/headerfooter/headerfooter.css">
+    <link rel = "stylesheet" href="/headerfooter/footer.css">
+    <link rel = "stylesheet" href="/headerfooter/header.css">
+    <link rel = "stylesheet" href="/resources/resources.css">
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -12,14 +14,22 @@
             $("#footer").load("/headerfooter/footer.html"); 
         });
     </script>
-    <header>
+    <head>
         <title>Palouse Smash Events</title>
-    </header>
+    </head>
+    <body>
+        
+        <div id="header"></div>
+        <h1 id = "resourcesHeader">
+            Where to Find Us!
+        </h1>
+        <div id = "resourcesFlex">
+                <a href = "https://discord.gg/hcfYbzgpNQ"><img src="/assets/discordIcon.png"></a>
+                <a href = "https://www.facebook.com/smashbrosatwsu/"><img src="/assets/facebookIcon.png"></a>
+                <a href = "https://twitter.com/smashbrosatwsu"><img src="/assets/twitterIcon.png"></a>
+        </div>
+        
+        <div id="footer"></div>
+    </body>
     
-    <div id="header"></div>
-    <div class = bodyDiv>
-        Resources
-    </div>
-    
-    <div id="footer"></div>
 </html>

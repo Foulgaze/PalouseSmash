@@ -1,5 +1,8 @@
 <html>
-    <link rel="stylesheet" href="/headerfooter/headerfooter.css">
+    <link rel = "stylesheet" href="/headerfooter/footer.css">
+    <link rel = "stylesheet" href="/headerfooter/header.css">
+
+    <link rel = "stylesheet" href = "rankings.css">
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -10,16 +13,59 @@
         {
             $("#header").load("../headerfooter/header.html"); 
             $("#footer").load("../headerfooter/footer.html"); 
+
         });
     </script>
-    <header>
-        <title>Palouse Smash Events</title>
-    </header>
     
-    <div id="header"></div>
-    <div class = bodyDiv>
-        Rankings
-    </div>
-    
-    <div id="footer"></div>
+    <body>
+        <header>
+            <title>Palouse Smash Events</title>
+        </header>
+
+        <div id="header"></div>
+        <main>
+      <section class="home-intro">
+        <h1 id = "rankingsHeader"> Palouse Smash Ultimate Rankings</h1>
+      </section>
+
+      <!-- <div class="home-about">
+        <h2 id = "rankingsSubHeader">Ranking Periods are twice a year, in Fall and Spring</h2>
+      </div> -->
+
+      <div class="home-more-stuff">
+        <div class="more-stuff-grid">
+          <img
+            src="/assets/PR2022Spring.png"
+            alt=""
+            class="slide-in from-left"
+          />
+          <h1 class="slide-in from-right rankingTimestamp">
+            Spring 2022
+          </h1>
+        </div>
+        <div class="more-stuff-grid">
+          <h1 class="slide-in from-left rankingTimestamp">
+            Fall 2021
+          </h1>
+          <img
+            src="/assets/PR2021Fall.png"
+            alt=""
+            class="slide-in from-right"
+          />
+        </div>
+        <div class="more-stuff-grid">
+          <img
+            src="/assets/PR2019Fall.png"
+            alt=""
+            class="slide-in from-left"
+          />
+          <h1 class="slide-in from-right rankingTimestamp">
+            Fall 2019
+          </h1>
+        </div>
+      </div>
+    </main>
+    <div id = "footer"></div>
+    </body>
+    <script src = "rankings.js"></script>
 </html>
