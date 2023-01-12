@@ -8,6 +8,7 @@
 {
     opacity: 1;
 }
+
 .from-left {
     grid-column: 2 / 3;
     -webkit-transform: translateX(-50%);
@@ -96,14 +97,9 @@ body
       }
       .more-stuff-grid {
         background: #f4f4f4;
-        padding: 4em 0;
-        display: grid;
-        grid-gap: 2em;
-        align-items: center;
-        grid-template-columns: minmax(3em, 3fr) repeat(2, minmax(400px, 600px)) minmax(
-            3em,
-            3fr
-          );
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
       }
     
 }

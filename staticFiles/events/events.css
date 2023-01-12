@@ -2,3 +2,98 @@
 {
     height: 100%;
 }
+
+#eventsHeader
+{
+    text-align: center;
+    font-size:400%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+
+#eventsDiv
+{
+    
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#eventsDiv img
+{
+    width: auto;
+    height: 250px;
+}
+
+#eventsDiv h2, #eventsDiv p
+{
+    text-align: center;
+    color: white;
+}
+hr
+{
+    padding:0;
+    margin:0;
+    border:1px solid #D00000;
+}
+.tournamentDesciption
+{
+    overflow: hidden;
+    padding: 0 15px 0 15px;
+}
+
+.specificEventDiv
+{
+    height:250px;
+    margin-bottom: 200px;
+    background-color: #FFBA08;
+    border-radius: 25px;
+    display:inline-block;
+    width:500px;
+    transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  animation: wiggle 2.5s infinite;
+
+}
+
+
+.hiddenInfo
+{
+    visibility: hidden;
+  opacity: 0;
+}
+
+.specificEventDiv:hover
+{
+    height: 750px;
+    animation: none;
+}
+.specificEventDiv:hover .hiddenInfo
+{
+    transition: visibility 0s linear 300ms, opacity 300ms;
+    visibility: visible;
+    opacity: 1;
+
+}
+
+@media only screen and (max-width: 1454px) {
+    #eventsDiv {
+      flex-direction: column;
+      align-items: center;
+      height:auto;
+    }
+  }
+
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+  
+
+
+
