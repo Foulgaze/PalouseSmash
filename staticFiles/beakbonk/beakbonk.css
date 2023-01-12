@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Ethnocentric;
+    src: url(/assets/Fonts/ethnocentric.otf);
+}
+.bodyDiv
+{
+    height: 100%;
+}
+#beakBonkHeader
+{
+    font-family: Ethnocentric;
+    text-align: center;
+    color:white;
+    font-size:400%;
+}
+
+#flexBody
+{
+    display: flex;
+}
+#flexBody img
+{
+    max-width: 100%;
+}

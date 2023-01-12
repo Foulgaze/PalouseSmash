@@ -1,4 +1,5 @@
 <html>
+    <link rel = "stylesheet" href="/beakbonk/beakbonk.css">
     <link rel = "stylesheet" href="/headerfooter/footer.css">
     <link rel = "stylesheet" href="/headerfooter/header.css">
     <script
@@ -13,15 +14,20 @@
             $("#footer").load("/headerfooter/footer.html"); 
         });
     </script>
-    <header>
+    <head>
         <title>Palouse Smash Events</title>
-    </header>
+    </head>
     
+    <body>
+        <div id="header"></div>
+        <div class = bodyDiv>
+           <h1 id = "beakBonkHeader">Beak Bonk</h1> 
+           <div id = "flexBody">
+                <img src = "/assets/Events/beakBonkLogo.jpg">
+           </div>
+        </div>
+        
+        <div id="footer"></div>
+    </body>
     
-    <div id="header"></div>
-    <div class = bodyDiv>
-        Beak Bonk
-    </div>
-    
-    <div id="footer"></div>
 </html>

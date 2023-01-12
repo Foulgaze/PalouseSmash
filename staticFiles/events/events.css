@@ -63,6 +63,10 @@ hr
     visibility: hidden;
   opacity: 0;
 }
+.enlargedFont
+{
+    font-size:150%;
+}
 
 .specificEventDiv:hover
 {
