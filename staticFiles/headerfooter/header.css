@@ -4,7 +4,7 @@ h2 {
   text-align: center;
 }
 
-
+html, body {padding:0; margin:0; height:100%;}
 * {
   font-family: "Raleway";
   box-sizing: border-box;
@@ -149,15 +149,16 @@ a.navLink:active
 
 #palouseHeaderLogo
 {
-  width: 110%;
-  height: 210%;
-  background-size: contain;
+  /* width: 110%; */
+  /* height: 210%; */
+  max-width:250px;
+  background-size: cover;
   float: left;
-  
 }
 #imageHolder
 {
   padding: -20 0 -20 0;
+  
 }
 
 html

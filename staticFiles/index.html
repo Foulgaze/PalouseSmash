@@ -1,7 +1,10 @@
+<!DOCTYPE html>
+
 <html>
-    <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/headerfooter/header.css">
     <link rel="stylesheet" href="/headerfooter/footer.css">
+    <link rel="stylesheet" href="/index.css">
+
 
     <script
         src="https://code.jquery.com/jquery-3.3.1.js"
@@ -12,17 +15,23 @@
         $(function()
         {
             $("#header").load("/headerfooter/header.html"); 
-            // $("#footer").load("/headerfooter/footer.html"); 
+            $("#footer").load("/headerfooter/footer.html"); 
         });
     </script>
     <body>
         <div id="header"></div>
+
         <div class = "bodyDiv">
-            <h1 class = "bodyHeader">Palouse</h1>
-            <h1 class = "bodyHeader">Smash</h1>
+            <h1 id = "indexHeader"> Home of Smash On the Palouse</h1>
+
+            <img src = "/assets/Header/PalouseLogo.png">
+
+            <p>The primary location for smash events for the greater Pullman-Moscow area, we run events for both Super Smash Brother's Ultimate, 
+                and Super Smash Brother's Melee. Compete in our weekly and monthly brackets against the best players the region has to offer, 
+                or show up before or after brackets for casual gaming with friends.  </p>
         </div>
         
-        <!-- <div id="footer"></div> -->
+        <div id="footer"></div>
     </body>
     
 </html> 

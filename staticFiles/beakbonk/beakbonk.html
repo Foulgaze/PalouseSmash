@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html>
+    <link rel = "stylesheet" href="/scrollAppear/scrollAppear.css">
     <link rel = "stylesheet" href="/beakbonk/beakbonk.css">
     <link rel = "stylesheet" href="/headerfooter/footer.css">
     <link rel = "stylesheet" href="/headerfooter/header.css">
@@ -20,14 +22,49 @@
     
     <body>
         <div id="header"></div>
-        <div class = bodyDiv>
-           <h1 id = "beakBonkHeader">Beak Bonk</h1> 
-           <div id = "flexBody">
-                <img src = "/assets/Events/beakBonkLogo.jpg">
-           </div>
+        <!-- <h1 id = "beakBonkHeader">Beak Bonk</h1>  -->
+        <div id = "flexBody">
+            <img src = "/assets/Events/beakBonkLogo.jpg">
+            <div class = "fade-in infoDiv">
+                <div class = "textInfo">
+                    <h1 class = "infoHeader">Beak Bonk 2023 is Here!</h1>
+                </div>
+                <div class = "subInfoDiv">
+                    <iframe width="994" height="559" src="https://www.youtube.com/embed/hHS0K1ZU_Gs" title="Beak Bonk 2023 Announcement Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class = "fade-in textInfo">
+                <h1 class = "infoHeader">Over $6000 in Prizes<br>Across 11 Events!</h1>
+            </div>
+            <div class = "fade-in infoDiv">
+                <div class = "subInfoDiv">
+                   
+                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=709%20Deakin%20Ave,%20Moscow,%20ID%2083843&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+                </div>
+                <div id = "locationText">
+                    <h1 class = "infoHeader">Hosted at the Pitman Center<br> at University of Idaho on April 29th </h1>
+                </div>
+            </div>
+            <div class = "remainingContentDiv">
+                <h1 style = "text-align: center;font-family: Ethnocentric;  padding-bottom: 50px;">Featured Games Include</h1>
+                <div id = "gamesHolder">
+                    <img src = "/assets/Events/meleeLogo.png">
+                    <img src = "/assets/Events/ultimateLogo.png">
+                    <img src = "/assets/Events/guiltyGearLogo.webp">
+                </div>
+                <h2 style = "text-align: center;font-family: Ethnocentric; padding: 50px 0  50px 0;" >And Many More!</h2>
+                <a href ="https://www.start.gg/tournament/beak-bonk-2023/details" target="_blank">
+                    <div class = "textInfo">
+                        <h1 class = "registerHeader">Register<br>Now</h1>
+                    </div>
+                </a>
+                <img src = "/assets/Events/beakBonkSponsors.png">
+            </div>
+
         </div>
         
         <div id="footer"></div>
     </body>
+    <script src = "/scrollAppear/scrollAppear.js"></script>
     
 </html>
