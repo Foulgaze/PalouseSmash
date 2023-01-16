@@ -1,12 +1,8 @@
-
+/* 
 
 .bodyDiv
 {
-    /* display:flex; */
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
     background-color: #FFBA08;
-    /* margin: auto 100px auto 100px; */
     border-radius: 25px;
     padding-bottom: 100px;
     
@@ -49,4 +45,122 @@
     {
         position: relative;
     }
-  }
+  } */
+
+button
+{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+#bodyDiv
+{
+    height:130%;
+    /* max-height:1700px; */
+    background-color: #1C3144;
+
+    display:flex;
+    flex-direction: column;
+}
+
+#bottomBar
+{
+    height:20%;
+    background-color: #1C3144;
+    vertical-align: top;
+    width:100%;
+    display:flex;
+    margin:0;
+    padding:0;
+}
+.imageInCarousel
+{
+    object-fit: fill;
+    width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+.carouselDiv
+{
+    margin:0;
+    padding:0;
+}
+#imageCarousel
+{
+    margin:0;
+    padding:0;
+    background-color: black;
+    max-height: 76%;
+    height:auto;
+    overflow: hidden;
+}
+#headerBox
+{
+    background-color: #1C3144;
+    flex-basis: 80%;
+    display:flex;
+    justify-content: center;
+}
+#scrollControl
+{
+    flex-basis: 20%;
+    max-width: 20%;
+    display:flex;
+    flex-direction: row;
+    background-color: #FFBA08;
+}
+.carouselButton
+{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+.hiddenImage
+{
+    display:none;
+}
+
+#bottomHeader
+{
+    color:white;
+    font-size:5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carouselButton > img
+{
+    max-width: 100%;
+}
+#clubDescription
+{
+    background-color: #1C3144;
+    margin: 1vw 0 1vw 0;
+    padding: 0 2vw 0 2vw;
+}
+#clubDescriptionText
+{
+    overflow-wrap: break-word;
+    font-size:2vw;
+    background-color: #D00000;
+    border-radius: 50px;
+    padding:20px;
+    color:white;
+}
+
+.footer
+{
+    position: absolute;
+}
+@media only screen and (max-width: 800px) {
+    .bodyDiv
+    {
+        padding:0;
+        height:auto;
+    }
+    
+  } 

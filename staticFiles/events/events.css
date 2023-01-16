@@ -65,7 +65,7 @@ hr
 }
 .enlargedFont
 {
-    font-size:1.5vw;
+    font-size:1vw;
 }
 
 .specificEventDiv:hover
@@ -90,10 +90,16 @@ hr
     }
     .enlargedFont
     {
+        font-size:2vw;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+
+    .enlargedFont
+    {
         font-size:3vw;
     }
   }
-
   @media only screen and (max-width: 550px) 
   {
     .specificEventDiv

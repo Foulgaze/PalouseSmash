@@ -21,17 +21,58 @@
     <body>
         <div id="header"></div>
 
-        <div class = "bodyDiv">
-            <h1 id = "indexHeader"> Home of Smash On the Palouse</h1>
+        <div id = "bodyDiv">
+            <div id = "imageCarousel">
+                <div class = "carouselDiv">
+                    <img class = "imageInCarousel" src = "/assets/indexPageCarousel/BB00.jpg">
+                </div>
+                <div class = "carouselDiv">
+                    <img class = "imageInCarousel hiddenImage" src = "/assets/indexPageCarousel/BB01.jpg">
+                </div>
+                <div class = "carouselDiv">
+                    <img class = "imageInCarousel hiddenImage" src = "/assets/indexPageCarousel/BB02.jpg">
+                </div>
+                <div class = "carouselDiv">
+                    <img class = "imageInCarousel hiddenImage" src = "/assets/indexPageCarousel/BB03.jpg">
+                </div>
+                <div class = "carouselDiv">
+                    <img class = "imageInCarousel hiddenImage" src = "/assets/indexPageCarousel/BB04.jpg">
+                </div>
+                <div class = "carouselDiv">
+                    <img class = "imageInCarousel hiddenImage" src = "/assets/indexPageCarousel/BB05.jpg">
+                </div>
 
-            <img src = "/assets/Header/PalouseLogo.png">
+            </div>
+            <div id = "bottomBar">
+                <div id = "headerBox">
+                    <h1 id = "bottomHeader">Home of Smash on the Palouse</h1>
+                </div>
+                <div id = "scrollControl">
+                    <button class = "carouselButton" onclick="moveLeft()">
+                        <img src = "/assets/indexPageCarousel/Arrows/rightArrow.png">
+                    </button>
+                    <button class = "carouselButton" onclick="moveRight()">
+                        <img src = "/assets/indexPageCarousel/Arrows/leftArrow.png">
+                    </button>
+                </div>
+            </div>
+            <div id = "clubDescription">
+                <p id = "clubDescriptionText">The primary location for smash events for the greater Pullman-Moscow area, we run events for both Super Smash Brother's Ultimate, 
+                    and Super Smash Brother's Melee. Compete in our weekly and monthly brackets against the best players the region has to offer, 
+                    or show up before or after brackets for casual gaming with friends. </p>
+            </div>
+            
+            <!-- <h1 id = "indexHeader"> Home of Smash On the Palouse</h1>
 
-            <p>The primary location for smash events for the greater Pullman-Moscow area, we run events for both Super Smash Brother's Ultimate, 
+            <img src = "/assets/Header/PalouseLogo.png">-->
+
+            <!-- <p>The primary location for smash events for the greater Pullman-Moscow area, we run events for both Super Smash Brother's Ultimate, 
                 and Super Smash Brother's Melee. Compete in our weekly and monthly brackets against the best players the region has to offer, 
-                or show up before or after brackets for casual gaming with friends.  </p>
+                or show up before or after brackets for casual gaming with friends. </p>  -->
         </div>
         
         <div id="footer"></div>
     </body>
+    <script src = "carousel.js"></script>
     
 </html> 

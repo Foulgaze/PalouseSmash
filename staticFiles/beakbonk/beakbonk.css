@@ -79,7 +79,11 @@
     background-color: #FFBA08;
     height:auto;
 }
-
+.remainingContentDiv > img
+{
+    max-height:100%;
+    width:100%;
+}
 #gamesHolder
 {
     display:flex;
