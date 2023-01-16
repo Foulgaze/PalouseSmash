@@ -11,7 +11,7 @@
     font-family: Ethnocentric;
     text-align: center;
     color:white;
-    font-size:400%;
+    font-size:4vw;
 }
 
 #flexBody
@@ -97,7 +97,7 @@
 {
     text-align: center;
     font-family: Ethnocentric; 
-    font-size:300%; 
+    font-size:3vw; 
     background-color: #D00000; 
     border-radius: 25px;
     margin-bottom: 100px;

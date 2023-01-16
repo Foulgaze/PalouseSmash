@@ -86,7 +86,8 @@ html, body {padding:0; margin:0; height:100%;}
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) 
+{
   .menu-button-container {
     display: flex;
   }
@@ -99,6 +100,7 @@ html, body {padding:0; margin:0; height:100%;}
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index:99;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -125,33 +127,20 @@ html, body {padding:0; margin:0; height:100%;}
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+  
 }
-a.navLink
-{
-  color:white;
-}
-a.navLink:link
+a 
 {
   text-decoration: none;
-}
-a.navLink:visited
-{
-  text-decoration: none;
-}
-a.navLink:hover
-{
-  text-decoration: none;
-}
-a.navLink:active
-{
-  text-decoration: none;
+  color: white;
 }
 
 #palouseHeaderLogo
 {
   /* width: 110%; */
   /* height: 210%; */
-  max-width:250px;
+  max-width:13vw;
+  min-width: 100px;
   background-size: cover;
   float: left;
 }
@@ -165,3 +154,7 @@ html
 {
   background-color:#1C3144 ;
 }
+/* @media (max-width: 700px) 
+{
+  max-width:150px;
+} */
